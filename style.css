@@ -1,0 +1,199 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* header */
+
+header{
+  height:100vh;
+  background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.5)) ,url(images/header-img.jpeg)  no-repeat center center /cover;
+}
+
+/* end of header */
+
+/* banner */
+
+.banner{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+}
+
+/* end of banner */
+
+/* animation header */
+
+.banner-header{
+  animation-name: anim;
+  animation-duration: 4s;
+}
+
+.banner-par{
+  animation-name: anim;
+  animation-duration: 4s;
+  animation-delay: .5s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes anim {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+/* end of animation */
+
+/* nav menu */
+.nav-menu{
+  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.7));
+  transition: .7s;
+}
+
+.menu-item{
+  font-size: 13px;
+  color:#eee;
+  letter-spacing: 1px;
+  transition: 3s;
+}
+
+.nav-active{
+  color: #70aed2;
+}
+
+.mission{
+  background: #151f20;
+}
+
+.underline{
+  width: 150px;
+  border:1px solid white;
+  margin: auto;
+}
+
+.menu-item:hover{
+ color: #70aed2;
+ text-decoration: none;
+}
+
+.line-1, .line-2 ,.line-3{
+  width: 23px;
+  height: 3px;
+  margin: 5px;
+  transition: all .4s;
+}
+
+.change .line-1 {
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.change .line-2{
+  opacity: 0;
+}
+
+.change .line-3 {
+  transform: rotate(45deg) translate(-5px,-6px);
+}
+
+.custom-navbar{
+  padding: 5px 30px;
+  background: linear-gradient(rgba(0,0,0,.6),rbga(0,0,0,.7));
+}
+/* end of nav menu */
+
+/* mission */
+
+.fromLeft{
+  animation-name: fromLeft;
+  animation-duration: 1.5s;
+}
+
+.fromRight{
+  animation-name: fromRight;
+  animation-duration: 1.5s;
+}
+
+@keyframes fromLeft {
+  0% {
+    transform: translateX(-1200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes fromRight {
+  0% {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+/* end of mission */
+
+/* collection */
+.card-shadow{
+  box-shadow: 4px 8px 10px #444;
+}
+
+.heading{
+  position: absolute;
+  top: 70%;
+  right:0%;
+  background: #151f20;
+  padding: 8px;
+  width: 50%;
+  text-align: left;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  cursor: pointer;
+  opacity: .9;
+}
+
+.heading:hover{
+  opacity: 1;
+}
+/* end of collection */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
